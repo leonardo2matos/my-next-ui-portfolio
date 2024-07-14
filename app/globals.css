@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('/public/fonts/ibm-plex-sans-v19-latin-regular.woff2') format('woff2'),
+         url('/public/fonts/ibm-plex-sans-v19-latin-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
