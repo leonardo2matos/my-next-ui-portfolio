@@ -1,4 +1,4 @@
-const {nextui} = require("@nextui-org/react");
+import { nextui } from "@nextui-org/react";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -11,7 +11,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['IBM Plex Sans', 'sans-serif'],
+        sans: ["IBM Plex Sans", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -25,7 +25,7 @@ const config: Config = {
     nextui({
       themes: {
         "purple-dark": {
-          extend: "dark", // <- inherit default values from dark theme
+          extend: "dark",
           colors: {
             background: "#0D001A",
             foreground: "#ffffff",
@@ -40,13 +40,11 @@ const config: Config = {
               700: "#FCADF9",
               800: "#FDD5F9",
               900: "#FEECFE",
-              DEFAULT: "#DD62ED",
-              foreground: "#ffffff",
             },
             focus: "#F182F6",
           },
           layout: {
-            disabledOpacity: "0.3",
+            disabledOpacity: 0.3,
             radius: {
               small: "4px",
               medium: "6px",
@@ -63,4 +61,5 @@ const config: Config = {
     }),
   ],
 };
+
 export default config;
